@@ -1,0 +1,14 @@
+# Don't track anything
+*
+!*/
+
+# Whitelist
+!.gitignore
+!README.md
+!labtools.py
+!units.py
+!utils.py
+!table.py
+!val.py
+!format.py
+!plot.py
