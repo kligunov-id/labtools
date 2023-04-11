@@ -15,7 +15,7 @@ def load(filename="data", transpose=True):
     with open(filename, "r") as data:
         dump = []
         for line in data.readlines():
-            if len(line) > 1 and line[0] != '#':
+            if len(line) and line[0] != '#':
                 dump.append(line)
         dump = np.array([[float(x) for x in line.split()] for line in dump])
     if transpose:
